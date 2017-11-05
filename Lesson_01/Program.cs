@@ -10,6 +10,17 @@ namespace Lesson_01
     {
         static void Main(string[] args)
         {
+            //int x;
+            //int y;
+            int x, y; //груповое обьевление переменных. 
+
+            x = 100;
+            Console.WriteLine($"Значение переменной X = {x}");
+            y = x / 5;
+            Console.WriteLine($"Значение Y = x/5 = {y}");
+
+
+            Console.ReadKey();
         }
     }
 }

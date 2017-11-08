@@ -58,7 +58,7 @@ namespace Lesson_06
                         Console.WriteLine("переменная i больше пяти");
                         break;
                 }
-            } 
+            }
             #endregion
 
             Console.ReadKey();

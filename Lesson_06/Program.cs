@@ -32,7 +32,7 @@ namespace Lesson_06
             #region Оператор выбора Switch case
             int i;
 
-            for (i = 1; i < 100; i++)
+            for (i = 1; i < 10; i++)
             {
                 switch (i)
                 {
@@ -60,6 +60,10 @@ namespace Lesson_06
                 }
             }
             #endregion
+
+
+
+
 
             Console.ReadKey();
         }

@@ -96,7 +96,7 @@ namespace Lesson_06
 
             #endregion
 
-            #region цикл Do While
+            #region цикл Do While и все остальные
 
             int num, nextdigit;
             string rez, nextrot;

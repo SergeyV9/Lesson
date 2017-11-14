@@ -105,7 +105,7 @@ namespace Lesson_08
             {
                 Console.WriteLine($"Значение элемента равно {x}");
                 SumF += x;
-                if (x == 4) break;
+                if (x > 500) break;
             }
             Console.WriteLine(SumF/NumF.Length);
 

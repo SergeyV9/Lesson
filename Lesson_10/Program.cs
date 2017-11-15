@@ -13,8 +13,9 @@ namespace Lesson_10
             Stack stk1 = new Stack(10);
             Stack stk2 = new Stack(10);
             Stack stk3 = new Stack(10);
-            char ch;
+            char ch, chh;
             int i;
+            string hh;
 
             Console.WriteLine("Поместить в stk1 символы A-J");
 
@@ -24,16 +25,53 @@ namespace Lesson_10
             }
             if (stk1.IsFuul()) Console.WriteLine("\nСтек stk1 заполнен. \n");
             Console.Write("Содержимое stk1: ");
-            while (stk1.IsEmty())
+            while (!stk1.IsEmty())
             {
                 ch = stk1.Pop();
                 Console.Write(ch);
             }
 
-            Console.WriteLine($"\n{new string('+', 70)}\n");
+            Console.WriteLine($"\n\n{new string('+', 70)}\n");
+
+            if (stk1.IsEmty()) Console.WriteLine("Стек stk1 пуст.\n");
 
 
+            for (i = 0; !stk1.IsFuul(); i++)
+            {
+                stk1.Push((char)('A' + i));
+            }
 
+            Console.WriteLine("Извлечь элементы из stk1 и поместить их в stk2");
+
+
+            for (i = 0; !stk2.IsFuul(); i++)
+            {
+                stk2.Push(stk1.Pop());
+            }
+
+            Console.Write("Содержимое стека stk2: ");
+
+            while (!stk2.IsEmty())
+            {
+                Console.Write(stk2.Pop());
+            }
+
+            Console.WriteLine($"\n\n{new string('+', 70)}\n");
+
+            for (i = 0; i < 5; i++)
+            {
+                stk3.Push((char)('A' + i));
+            }
+
+            hh = "";
+
+            for (i = 0; i<5; i++)
+            {
+                hh += Convert.ToString(stk3.Pop());
+            }
+
+            Console.WriteLine($"Емкость стека stk3: {stk3.Capasity()}");
+            Console.WriteLine($"Количество объектов в стеке stk3: {stk3.GetNum()} ({hh})");
 
             Console.ReadKey();
         }

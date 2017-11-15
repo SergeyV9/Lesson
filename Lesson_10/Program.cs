@@ -10,6 +10,32 @@ namespace Lesson_10
     {
         static void Main(string[] args)
         {
+            Stack stk1 = new Stack(10);
+            Stack stk2 = new Stack(10);
+            Stack stk3 = new Stack(10);
+            char ch;
+            int i;
+
+            Console.WriteLine("Поместить в stk1 символы A-J");
+
+            for (i = 0; !stk1.IsFuul(); i++)
+            {
+                stk1.Push((char)('A' + i));
+            }
+            if (stk1.IsFuul()) Console.WriteLine("\nСтек stk1 заполнен. \n");
+            Console.Write("Содержимое stk1: ");
+            while (stk1.IsEmty())
+            {
+                ch = stk1.Pop();
+                Console.Write(ch);
+            }
+
+            Console.WriteLine($"\n{new string('+', 70)}\n");
+
+
+
+
+            Console.ReadKey();
         }
 
 

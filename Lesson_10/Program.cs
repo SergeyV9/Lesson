@@ -13,7 +13,7 @@ namespace Lesson_10
             Stack stk1 = new Stack(10);
             Stack stk2 = new Stack(10);
             Stack stk3 = new Stack(10);
-            char ch, chh;
+            char ch;
             int i;
             string hh;
 
